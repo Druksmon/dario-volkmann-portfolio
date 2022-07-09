@@ -1,0 +1,175 @@
+.services-container {
+    width: 100%;
+    background-color: rgba(64, 66, 66, 0.85);
+    position: relative;
+}
+
+.services-selector {
+    width: 80%;
+    margin: auto;
+
+}
+
+.services-selector p {
+    padding: 70px 0 0 0;
+    font-size: 25px;
+}
+
+.services-selector span {
+    font-weight: bold;
+}
+
+.services-boxes {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+    padding: 50px 0 90px 0;
+
+}
+
+.services-boxes img {
+    width: 85px;
+}
+
+.services-boxes h3 {
+    font-size: 30px;
+    padding: 10px 0 0 0;
+}
+
+.services-boxes p {
+    font-size: 15px;
+    padding: 20px 0 0 0;
+}
+
+.services-box-1, .services-box-2, .services-box-3, .services-box-4 {
+    background-color: #212121;
+    width: 100%;
+    border-top: 5px solid;
+    border-image: linear-gradient(to right, #0353ad, #421992) 1;
+    display: flex;
+
+}
+.services-box-4{
+    display: none;
+}
+
+.services-box-selector {
+    width: 80%;
+    margin: auto;
+    min-width: 157px;
+    padding: 50px 0;
+
+}
+
+.form-1-services, .form-2-services {
+    filter: blur(90px);
+    position: absolute;
+    z-index: -1;
+}
+
+.form-1-services {
+    right: 0;
+    top: -150px;
+    width: 50%;
+}
+
+.form-2-services {
+    left: -160px;
+    top: 90px;
+    width: 60%;
+}
+
+
+@media only screen and (max-width: 1400px) {
+
+
+    .services-boxes img {
+        width: 70px;
+    }
+
+    .services-boxes h3 {
+        font-size: 20px;
+        padding: 10px 0 0 0;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .services-boxes img {
+        width: 50px;
+    }
+
+    .services-boxes h3 {
+        font-size: 20px;
+        padding: 10px 0 0 0;
+    }
+
+    .services-boxes p {
+        font-size: 13px;
+
+    }
+
+}
+
+@media only screen and (max-width: 1095px) {
+
+    .services-boxes img {
+        width: 50px;
+    }
+
+    .services-boxes h3 {
+        font-size: 20px;
+        padding: 10px 0 0 0;
+    }
+
+    .services-boxes p {
+        font-size: 13px;
+    }
+
+}
+
+
+@media only screen and (max-width: 750px) {
+    .services-boxes {
+        grid-template-columns:  45% 45%;
+        grid-row-gap: 30px;
+    }
+    .services-box-4{
+        display: flex;
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+    .services-boxes {
+        grid-template-columns:  100%;
+    }
+    .services-boxes img {
+        width: 70px;
+    }
+    .services-boxes h3 {
+        font-size: 20px;
+        padding: 10px 0 0 0;
+    }
+
+    .services-boxes p {
+        font-size: 13px;
+    }
+    .services-box-4{
+        display: none;
+    }
+    .services-box-selector {
+
+        padding: 40px 0;
+
+    }
+
+}
+
+
+@media only screen and (max-width: 300px) {
+}
+
+
+

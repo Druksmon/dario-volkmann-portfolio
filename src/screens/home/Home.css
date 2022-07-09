@@ -1,0 +1,26 @@
+.home-container{
+
+
+
+}
+
+.form-1, .form-2{
+    filter: blur(90px);
+    position: absolute;
+
+    z-index: -1;
+
+}
+.form-1{
+    left: -160px;
+    top: 90px;
+    width: 60%;
+
+}
+
+.form-2{
+    right: 125px;
+    top: -150px;
+    width: 50%;
+
+}

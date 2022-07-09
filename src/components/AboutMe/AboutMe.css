@@ -1,0 +1,121 @@
+.about-container {
+    width: 100%;
+    background-color: rgb(33, 33, 33);
+    overflow: hidden;
+
+}
+
+.about-selector {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-auto-flow: row;
+    padding: 90px 0;
+    position: relative;
+}
+
+.about-selector h6 {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 40px 0;
+}
+
+.about-selector span {
+    font-weight: 800;
+}
+
+.about-box-1 p {
+
+    margin: 40px 0;
+    width: 80%;
+}
+
+.about-box-2 {
+    height: 100%;
+    border-left: 5px solid;
+    border-image: linear-gradient(to top, #0353ad, #421992) 1;
+    padding: 0 50px;
+
+}
+
+.contact-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 30px 0;
+    min-width: 160px;
+}
+
+.contact-list a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+.contact-list img {
+    width: 35px;
+}
+
+.contact-list p {
+    padding: 0 0 0 30px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .contact-list {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-auto-flow: column;
+        margin: 0;
+    }
+
+    @media only screen and (max-width: 992px) {}
+
+
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .about-selector {
+        grid-template-columns: 90%;
+        grid-template-rows: 50% 50% ;
+        grid-auto-flow: column;
+
+    }
+    .about-box-2 {
+        border-left: none;
+        border-top: 5px solid;
+        border-image: linear-gradient(to left, #0353ad, #421992) 1;
+        padding: 40px 0;
+    }
+    .contact-list {
+
+        grid-template-rows: auto auto;
+        grid-auto-flow: column;
+
+    }
+    .about-box-1 p {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+
+    .contact-list {
+
+        grid-template-rows: auto auto auto auto;
+
+    }
+}
+
+
+@media only screen and (max-width: 300px) {}

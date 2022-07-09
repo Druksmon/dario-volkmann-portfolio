@@ -1,0 +1,151 @@
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(49, 50, 52, 0.76);
+    position: relative;
+}
+
+.header-container {
+    width: 90%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-template-rows: 40% auto;
+    grid-auto-flow: row;
+    margin-left: auto;
+}
+
+.header-container span {
+    font-weight: 300;
+}
+
+.header-box-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    z-index: 1;
+}
+
+.header-box-1 h1{
+    font-size: 70px;
+    letter-spacing: 0;
+    line-height: 1;
+}
+
+.header-box-1 h3{
+    font-size: 30px;
+    line-height: 1.4;
+    min-width: 224px;
+}
+.header-box-1 p{
+    font-size: 25px;
+}
+
+.header-box-1 hr {
+    width: 60px;
+    height: 5px;
+    background-color: white;
+    margin: 50px 0;
+    border: none;
+    border-radius: 10px 0 10px;
+}
+
+.header-box-1 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+
+}
+
+.header-box-2 {
+
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../assets/programmer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.form-1-header, .form-2-header{
+    filter: blur(70px);
+    position: absolute;
+    z-index: -1;
+}
+
+.form-1-header{
+    left: -160px;
+    top: 90px;
+    width: 60%;
+}
+
+.form-2-header{
+    right: 125px;
+    top: -150px;
+    width: 50%;
+}
+
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 750px) {
+
+    .header-box-1 h1{
+        font-size: 50px;
+    }
+    .header-box-1 h3{
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    .header-box-1 p{
+        font-size: 15px;
+    }
+    .header-box-1 a {
+        width: 230px;
+        height: 30px;
+    }
+
+    .form-1-header{
+        left: -40px;
+        top: 100px;
+        width: 60%;
+    }
+
+    .form-2-header{
+        right: 125px;
+        top: -10px;
+        width: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (max-width: 425px) {
+
+    .form-1-header{
+        left: 0;
+        top: 0;
+        width: 90%;
+    }
+
+    .form-2-header{
+        bottom: 0;
+        width: 90%;
+        margin-top: auto;
+    }
+}
+
+
