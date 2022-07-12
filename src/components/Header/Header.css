@@ -4,6 +4,7 @@ header {
     height: 100vh;
     background-color: rgba(49, 50, 52, 0.76);
     position: relative;
+    overflow: hidden;
 }
 
 .header-container {
@@ -120,13 +121,17 @@ header {
     .form-1-header{
         left: -40px;
         top: 100px;
-        width: 60%;
+        width: 70%;
+        filter: blur(0);
+
     }
 
     .form-2-header{
         right: 125px;
-        top: -10px;
-        width: 50%;
+        top: -90px;
+        width: 90%;
+        filter: blur(0);
+
     }
 
 }
@@ -136,14 +141,14 @@ header {
 @media only screen and (max-width: 425px) {
 
     .form-1-header{
-        left: 0;
-        top: 0;
-        width: 90%;
+        left: -90px;
+        top: -30px;
+        width: 100%;
     }
 
     .form-2-header{
         bottom: 0;
-        width: 90%;
+        width: 100%;
         margin-top: auto;
     }
 }

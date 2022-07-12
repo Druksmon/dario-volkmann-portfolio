@@ -58,24 +58,14 @@
 }
 
 .work-img-1 {
-
-
     background-image: url("../assets/SHOP.png");
-
-
 }
 .work-img-2 {
     background-image: url("../assets/YOGA-HANSA.png");
-
-
 }
 
 .work-img-3 {
     background-image: url("../assets/WEATHERAPP.png");
-
-
-
-
 }
 
 .work-img-4 {
@@ -143,6 +133,10 @@
 
 }
 
+.not-allowed-cursor{
+    cursor: not-allowed;
+}
+
 
 @media only screen and (max-width: 1200px) {
 }
@@ -155,6 +149,14 @@
         grid-template-columns: 100%;
         grid-row-gap: 30px;
     }
+    .form-1-work {
+        filter: blur(0);
+        right: 0;
+        bottom: -90px;
+        width: 100%;
+
+    }
+
 
 }
 
