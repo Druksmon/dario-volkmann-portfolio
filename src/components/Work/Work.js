@@ -5,7 +5,7 @@ import formFirst from "../assets/formFirst.svg";
 const Work = () => {
     return (
 
-        <div className="work-container">
+        <div id='work' className="work-container">
             <img src={formFirst} className="form-1-work"/>
 
             <div className="work-selector">

@@ -22,23 +22,25 @@ const Services = () => {
                         <div className='services-box-selector'>
                             <img src={iconUx} alt=""/>
                             <h3>Web Developer</h3>
-                            <p>I transform your idea into reality.</p>
+                            <p>I transform your idea into reality. <br/>
+                                <a href="#work">Check my projects.</a></p>
                         </div>
                     </div>
 
                     <div className="services-box-2">
                         <div className="services-box-selector">
                             <img src={iconDesign} alt=""/>
-                            <h3>UX/UI</h3>
-                            <p>Always easy to navigate.</p>
+                            <h3>Design</h3>
+                            <p>Custom designs from scratch. <br/>
+                                <a target='_blank' href="https://www.behance.net/dariovolkmann">Check my designs.</a> </p>
                         </div>
                     </div>
 
                     <div className="services-box-3">
                         <div className="services-box-selector">
                             <img src={iconCoding} alt=""/>
-                            <h3>Design</h3>
-                            <p>Custom designs from scratch.</p>
+                            <h3>UX/UI</h3>
+                            <p>Always easy to navigate.</p>
                         </div>
                     </div>
                     <div className="services-box-4">
