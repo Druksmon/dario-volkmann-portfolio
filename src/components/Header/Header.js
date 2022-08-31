@@ -6,7 +6,6 @@ import {motion} from "framer-motion";
 
 const Header = () => {
 
-
     return (
         <header>
             <img src={formFirst} className="form-1-header" alt='svg'/>
@@ -26,7 +25,6 @@ const Header = () => {
                         transition={{type: "spring", stiffness: 400, damping: 10}}
                         className="buttonContact">
                         CONTACT ME
-
                     </motion.a>
                 </motion.div>
                 <div className="header-box-2">

@@ -1,10 +1,9 @@
 import './Work.css'
-import formFirst from "../assets/formFirst.svg";
-import {motion} from "framer-motion";
-// import projects from '../../data.json'
-import WorkCard from "../WorkCard/WorkCard";
 import {collection, getFirestore, getDocs} from '@firebase/firestore'
 import {useEffect, useState} from "react";
+import {motion} from "framer-motion";
+import formFirst from "../assets/formFirst.svg";
+import WorkCard from "../WorkCard/WorkCard";
 
 
 const Work = () => {
@@ -25,8 +24,6 @@ const Work = () => {
             })
     }, []);
 
-
-    // console.log(projects)
 
     return (
 
