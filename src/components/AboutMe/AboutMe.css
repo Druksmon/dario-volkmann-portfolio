@@ -9,7 +9,8 @@
     width: 80%;
     margin: auto;
     display: grid;
-    grid-template-columns: 60% auto;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
     grid-auto-flow: row;
     padding: 90px 0;
     position: relative;
@@ -25,9 +26,17 @@
     font-weight: 800;
 }
 
+.about-box-1 {
+    min-width: 350px;
+}
+
 .about-box-1 p {
 
     margin: 40px 0;
+
+}
+
+.my-description {
     width: 80%;
 }
 
@@ -35,23 +44,63 @@
     height: 100%;
     border-left: 5px solid;
     border-image: linear-gradient(to top, #0353ad, #421992) 1;
-    padding: 0 50px;
+    padding: 0 0 0 50px;
 
 }
+
+.about-me-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-form div input, .about-me-form div textarea {
+    background-color: rgba(168, 168, 168, 0.34);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+
+}
+
+
+.about-me-form button {
+    margin: 25px 0 0 0;
+    background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%);
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: none;
+}
+
+.about-me-form button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
 
 .contact-list {
     display: grid;
-    grid-template-columns: auto auto;
-    margin: 30px 0;
-    min-width: 160px;
+    grid-template-columns: 50% 50%;
+    /*min-width: 160px;*/
 }
 
 .contact-list a {
+    width: 100%;
     display: flex;
     align-items: center;
     color: white;
     text-decoration: none;
-    margin: 20px 0;
     font-size: 15px;
 }
 
@@ -65,57 +114,77 @@
 }
 
 
-
-
-
-
 @media only screen and (max-width: 1200px) {
-    .contact-list {
-        display: grid;
-        grid-template-rows: auto auto auto auto;
-        grid-auto-flow: column;
-        margin: 0;
+    /*.contact-list {*/
+    /*    display: grid;*/
+    /*    grid-template-rows: auto auto auto auto;*/
+    /*    grid-auto-flow: column;*/
+    /*    margin: 0;*/
+    /*}*/
+    @media only screen and (max-width: 992px) {
     }
-
-    @media only screen and (max-width: 992px) {}
-
-
 
 
 }
 
 @media only screen and (max-width: 768px) {
+
+    .about-box-1 {
+        min-width: 250px;
+    }
+
     .about-selector {
-        grid-template-columns: 90%;
-        grid-template-rows: 50% 50% ;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
         grid-auto-flow: column;
 
     }
+
     .about-box-2 {
         border-left: none;
         border-top: 5px solid;
         border-image: linear-gradient(to left, #0353ad, #421992) 1;
         padding: 40px 0;
     }
+
+
+    .contact-list a {
+        width: 150px;
+
+    }
+
     .contact-list {
 
         grid-template-rows: auto auto;
         grid-auto-flow: column;
 
     }
-    .about-box-1 p {
+
+    .my-description {
         width: 100%;
     }
+
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 380px) {
 
-    .contact-list {
-
-        grid-template-rows: auto auto auto auto;
+    .contact-list a {
+        flex-direction: column;
+        align-items: flex-start;
 
     }
+    .contact-list p {
+        padding: 0;
+
+    }
+
+
+
+    /*.contact-list {*/
+    /*    grid-template-rows: auto auto auto auto;*/
+    /*}*/
 }
 
 
-@media only screen and (max-width: 300px) {}
+@media only screen and (max-width: 300px) {
+}

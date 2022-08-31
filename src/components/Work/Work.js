@@ -3,7 +3,7 @@ import formFirst from "../assets/formFirst.svg";
 import {motion} from "framer-motion";
 // import projects from '../../data.json'
 import WorkCard from "../WorkCard/WorkCard";
-import {collection, getFirestore, getDocs, getDoc} from '@firebase/firestore'
+import {collection, getFirestore, getDocs} from '@firebase/firestore'
 import {useEffect, useState} from "react";
 
 

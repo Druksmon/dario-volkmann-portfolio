@@ -31,6 +31,7 @@ const WorkCard = ({data}) => {
                                               transition={{duration: 0.3}}
                                               className={'demo-work-button demo-work-button-not-ready'}
                                               target='_blank'
+                                              rel="noreferrer"
                                     >DEMO >
 
                                     </motion.a>
@@ -49,8 +50,9 @@ const WorkCard = ({data}) => {
                         ready ? (
                                 <div>
                                     <a target='_blank' className={ready ? ' ' : 'demo-work-button-ready'}
+                                       rel="noreferrer"
                                        href={link}>DEMO</a>
-                                    <a target='_blank' href={gitHub}>GitHub</a>
+                                    <a target='_blank' rel="noreferrer" href={gitHub}>GitHub</a>
                                 </div>
 
                             ) :
