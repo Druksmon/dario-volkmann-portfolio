@@ -4,17 +4,21 @@ import email from '../assets/icons/gmail.png'
 import github from '../assets/icons/github.png'
 import cv from '../assets/icons/cv.png'
 import cvPdf from '../assets/CV.pdf'
+import {motion} from "framer-motion";
 
 const AboutMe = () => {
     return (
 
         <div id='about-container' className="about-container">
-            <div className="about-selector">
+            <motion.div  initial={{opacity: 0, y: 50}}
+                         whileInView={{opacity: 1, y: 0}}
+                         viewport={{once: true}}
+                         transition={{  duration: 0.5}} className="about-selector">
                 <div className="about-box-1">
                     <h6>ABOUT <span>ME</span></h6>
-                    <p>Front End Developer located in Córdoba, Argentina.
-                        I provide solutions where others see problems. <br/>
-                        I'm currently building sites using HTML, CSS, REACT & more.
+                    <p>Self-Taught Front-End Developer located in Córdoba, Argentina.<br/>
+                        Passionate about technology and design, I intend to create beautiful sites for you. <br/>
+                        I'm currently using HTML, CSS, REACT & more.
                       </p>
                     <p>We Should work together.</p>
                 </div>
@@ -39,7 +43,7 @@ const AboutMe = () => {
                         </a>
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
         </div>
     )

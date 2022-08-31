@@ -5,6 +5,7 @@ import iconUx from '../assets/icons/user-experience.png'
 import iconMore from '../assets/icons/more.png'
 import formFirst from "../assets/formFirst.svg";
 import formSecond from "../assets/formSecond.svg";
+import {motion} from "framer-motion";
 
 const Services = () => {
     return (
@@ -12,7 +13,11 @@ const Services = () => {
         <div className="services-container">
             <img src={formFirst} className="form-1-services"/>
             <img src={formSecond} className="form-2-services"/>
-            <div className="services-selector">
+            <motion.div initial={{opacity: 0, y: 50}}
+                        whileInView={{opacity: 1, y: 0}}
+                        viewport={{once: true}}
+                        transition={{duration: 0.8}}
+                        className="services-selector">
 
                 <p>My <span>Services</span></p>
 
@@ -32,7 +37,8 @@ const Services = () => {
                             <img src={iconDesign} alt=""/>
                             <h3>Design</h3>
                             <p>Custom designs from scratch. <br/>
-                                <a target='_blank' href="https://www.behance.net/dariovolkmann">Check my designs.</a> </p>
+                                <a target='_blank' href="https://www.behance.net/dariovolkmann">Check my designs.</a>
+                            </p>
                         </div>
                     </div>
 
@@ -54,7 +60,7 @@ const Services = () => {
 
 
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }

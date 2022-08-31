@@ -110,12 +110,12 @@ nav h1{
     border-radius: 50%;
     background-color: #2f3239;
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
     position: absolute;
     top: 50%;
     right: 25px;
     transform: translateY(-50%);
     display: none;
+    z-index: 5;
 }
 
 
@@ -127,13 +127,15 @@ nav h1{
     .navigation-menu ul {
         flex-direction: column;
         position: absolute;
-        top: 80px;
+        top: 0;
         left: 0;
         width: 100%;
-        height: calc(100vh - 80px);
+        height: 100vh;
         background-color: #313234;
         border-top: 1px solid black;
         display: none;
+        padding: 90px 0;
+
     }
     .navigation-menu  li a:nth-child(1){
         margin: 0;

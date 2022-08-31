@@ -1,5 +1,6 @@
 import './Nav.css'
 import {useState} from "react";
+import {AnimatePresence, motion} from "framer-motion";
 
 
 const Nav = () => {
@@ -12,6 +13,11 @@ const Nav = () => {
             window.scrollY >= 10 ? setColor(true) : setColor(false)
         }
     }
+    const closeIfIsOpen = () => {
+        if (isNavExpanded === true) {
+            setIsNavExpanded(!isNavExpanded)
+        }
+    }
 
     window.addEventListener('scroll', changeColor)
 
@@ -19,7 +25,9 @@ const Nav = () => {
 
     return (
         <>
-            <nav className={color ? 'navigation-scroll' : 'navigation'}>
+            <motion.nav initial={{opacity: 0}} animate={{opacity: 1}}
+                        transition={{type: 'tween', delay: 0.4, duration: 0.9}}
+                        className={color ? 'navigation-scroll' : 'navigation'}>
                 <div className='navigation-selector'>
 
                     <a href='#header-container' className="brand-name">
@@ -31,7 +39,6 @@ const Nav = () => {
                             setIsNavExpanded(!isNavExpanded);
                         }}
                     >
-                        {/* icon from Heroicons.com */}
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5"
@@ -45,26 +52,29 @@ const Nav = () => {
                             />
                         </svg>
                     </button>
-                    <div
-                        className={
-                            isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
-                        }
-                    >
-                        <ul>
-                            <li>
-                                <a href='#header-container'>HOME</a>
-                            </li>
-                            <li>
-                                <a href='#about-container'>ABOUT ME</a>
-                            </li>
-                            <li>
-                                <a target='_blank' href="mailto:dariusvolkmann@gmail.com">CONTACT ME </a>
-                            </li>
-                        </ul>
-                    </div>
+
+                    <motion.div className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
+                        <AnimatePresence>
+                            <motion.ul initial={{opacity: 0, y: -50}} whileInView={{opacity: 1, y: 0}}
+                                       exit={{opacity: 0, y: -50}}
+                                       transition={{type: 'tween', duration: 0.2}}>
+                                <li>
+                                    <a href='#header-container' onClick={closeIfIsOpen}>HOME</a>
+                                </li>
+                                <li>
+                                    <a href='#about-container' onClick={closeIfIsOpen}>ABOUT ME</a>
+                                </li>
+                                <li>
+                                    <a target='_blank' href="mailto:dariusvolkmann@gmail.com">CONTACT ME </a>
+                                </li>
+                            </motion.ul>
+                        </AnimatePresence>
+                    </motion.div>
+
+
                 </div>
 
-            </nav>
+            </motion.nav>
         </>
     )
 

@@ -53,7 +53,7 @@ header {
     border-radius: 10px 0 10px;
 }
 
-.header-box-1 a {
+.header-box-1 a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +65,7 @@ header {
     background-color: white;
     text-decoration: none;
     color: black;
-
+    cursor: pointer;
 }
 
 .header-box-2 {
