@@ -1,31 +1,32 @@
-.skills-container{
+.skills-container {
     width: 100%;
     background-color: rgba(64, 66, 66, 0.85);
-
+    padding: 120px 0 200px 0;
 }
 
-.skills-selector{
+.skills-selector {
     width: 80%;
     margin: auto;
 }
 
-.skills-selector p{
+.skills-selector p {
     font-size: 25px;
 }
 
-.skills-selector span{
+.skills-selector span {
     font-weight: bold;
 }
 
-.skills-icon-container{
-    padding: 50px 0 90px 0;
+.skills-icon-container {
+    padding: 50px 0 0 0;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: repeat(5, auto);
+    grid-row-gap: 70px;
     justify-content: space-between;
 
 }
 
-.skills-icons{
+.skills-icons {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,27 +34,42 @@
 }
 
 
-.skills-icons svg{
+.skills-icons svg {
     fill: #ababab;
     transition: 1s;
+
 }
 
 
-.skills-icons h5{
-    color:  #ababab;
+.skills-icons h5 {
+    color: #ababab;
     margin: 10px 0 0 0;
 }
 
 
 @media only screen and (max-width: 750px) {
-    .skills-icon-container{
+    .skills-icon-container {
 
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto;
-        grid-row-gap: 30px;
+        grid-template-columns: repeat(3, auto);
+
 
 
     }
 }
+
+@media only screen and (max-width: 450px) {
+
+    .skills-icons svg {
+       width: 40px;
+
+    }
+    .skills-icons h5 {
+       font-size: 11px;
+    }
+
+}
+
+
+
 
 

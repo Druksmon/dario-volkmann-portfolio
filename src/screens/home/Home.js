@@ -5,9 +5,7 @@ import Work from "../../components/Work/Work";
 import AboutMe from "../../components/AboutMe/AboutMe";
 import Skills from "../../components/Skills/Skills";
 
-
 const Home = () => {
-
 
   return(
       <div className='home-container'>

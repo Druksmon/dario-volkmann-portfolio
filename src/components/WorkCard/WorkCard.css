@@ -79,6 +79,9 @@
 .work-card-title {
     margin: 10px 0;
 }
+.work-card-title p {
+    word-spacing: 8px;
+}
 
 
 .work-card-buttons {

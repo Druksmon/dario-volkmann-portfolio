@@ -1,5 +1,5 @@
 import './Work.css'
-import {collection, getFirestore, getDocs} from '@firebase/firestore'
+import {collection, getFirestore, getDocs} from 'firebase/firestore'
 import {useEffect, useState} from "react";
 import {motion} from "framer-motion";
 import formFirst from "../assets/formFirst.svg";
@@ -28,7 +28,7 @@ const Work = () => {
     return (
 
         <div id='work' className="work-container">
-            <img src={formFirst} className="form-1-work"/>
+            {/*<img src={formFirst} className="form-1-work"/>*/}
 
             <motion.div initial={{opacity: 0, y: 50}}
                         whileInView={{opacity: 1, y: 0}}
