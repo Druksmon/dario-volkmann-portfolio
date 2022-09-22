@@ -2,7 +2,6 @@ import './Work.css'
 import {collection, getFirestore, getDocs} from 'firebase/firestore'
 import {useEffect, useState} from "react";
 import {motion} from "framer-motion";
-import formFirst from "../assets/formFirst.svg";
 import WorkCard from "../WorkCard/WorkCard";
 
 
@@ -22,13 +21,13 @@ const Work = () => {
                     snapShot.docs.map((doc) => ({id: doc.id, ...doc.data()}))
                 )
             })
-    }, []);
+    }, );
 
 
     return (
 
         <div id='work' className="work-container">
-            {/*<img src={formFirst} className="form-1-work"/>*/}
+
 
             <motion.div initial={{opacity: 0, y: 50}}
                         whileInView={{opacity: 1, y: 0}}

@@ -1,7 +1,7 @@
 .services-container {
     width: 100%;
-    background-color: rgba(64, 66, 66, 0.85);
-    position: relative;
+    background-color: rgba(64, 66, 66, 0.66);
+    /*position: relative;*/
     padding: 100px 0 90px 0;
 }
 
@@ -66,24 +66,6 @@
 
 }
 
-.form-1-services, .form-2-services {
-    filter: blur(90px);
-    position: absolute;
-    z-index: -1;
-}
-
-.form-1-services {
-    right: 0;
-    top: -150px;
-    width: 50%;
-}
-
-.form-2-services {
-    left: -160px;
-    top: 90px;
-    width: 60%;
-}
-
 
 @media only screen and (max-width: 1400px) {
 
@@ -142,19 +124,6 @@
     }
     .services-box-4{
         display: flex;
-    }
-    .form-1-services {
-        filter: blur(0);
-        right: 0;
-        top: -10px;
-        width: 100%;
-    }
-
-    .form-2-services {
-        filter: blur(0);
-        left: -160px;
-        top: 190px;
-        width: 100%;
     }
 
 

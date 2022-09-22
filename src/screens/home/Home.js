@@ -9,6 +9,8 @@ const Home = () => {
 
   return(
       <div className='home-container'>
+          <div className="circle circle-right"/>
+          <div className="circle circle-left"/>
           <Header/>
           <Services/>
           <Skills/>

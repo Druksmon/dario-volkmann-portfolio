@@ -82,23 +82,7 @@ header {
     background-position: center;
 }
 
-.form-1-header, .form-2-header{
-    filter: blur(70px);
-    position: absolute;
-    z-index: -1;
-}
 
-.form-1-header{
-    left: -160px;
-    top: 90px;
-    width: 60%;
-}
-
-.form-2-header{
-    right: 125px;
-    top: -150px;
-    width: 50%;
-}
 
 
 @media only screen and (max-width: 1200px) {}
@@ -122,39 +106,21 @@ header {
         height: 30px;
     }
 
-    .form-1-header{
-        left: -40px;
-        top: 100px;
-        width: 70%;
-        filter: blur(0);
-
-    }
-
-    .form-2-header{
-        right: 125px;
-        top: -90px;
-        width: 90%;
-        filter: blur(0);
-
-    }
 
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+
+
+    .header-box-2 {
+
+      display: none;
+    }
+}
 
 @media only screen and (max-width: 425px) {
 
-    .form-1-header{
-        left: -90px;
-        top: -30px;
-        width: 100%;
-    }
 
-    .form-2-header{
-        bottom: 0;
-        width: 100%;
-        margin-top: auto;
-    }
 }
 
 
