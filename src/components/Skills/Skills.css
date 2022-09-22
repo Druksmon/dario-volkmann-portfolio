@@ -39,6 +39,11 @@
     transition: 1s;
 
 }
+.skills-icons svg:hover {
+    fill: #6a6cff;
+
+    transition: 1s;
+}
 
 
 .skills-icons h5 {

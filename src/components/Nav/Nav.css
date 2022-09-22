@@ -30,7 +30,7 @@ nav h1{
     color: #000000;
     /*border-bottom: 1px solid #2a2a2a;*/
     background-color: rgba(49, 50, 52, 0.89);
-    transition: background-color 0.3s;
+    transition: all 0.9s;
     z-index: 10;
 }
 
