@@ -21,7 +21,7 @@ const Work = () => {
                     snapShot.docs.map((doc) => ({id: doc.id, ...doc.data()}))
                 )
             })
-    }, );
+    },);
 
 
     return (
